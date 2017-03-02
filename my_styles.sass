@@ -1,0 +1,99 @@
+body
+  display: flex
+  background: #d6d6d6
+  min-height: 100vh
+  margin: 0
+  padding: 0
+  // 
+
+.left-nav
+  display: flex
+  background: $nav-item-background-color 
+  color: $nav-item-text-color
+  flex-grow: 1
+  max-width: 110px
+  min-width: 70px
+  font-size: 0.76rem
+  ul
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    margin: 0
+    padding: 0
+    li
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      margin: 0
+      padding: 0
+      height: 87px
+      width: 100%
+      // border: 1px dashed yellow
+      &.selected
+        color: $nav-item-text-color-selected
+        background-color: $nav-item-background-color-selected
+      a
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-decoration: none
+        color: $nav-link-color-hover
+        width: 100%
+        height: 100%
+
+.main-aside-footer-section
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+
+.main-aside-section
+  display: flex
+  flex-grow: 1
+
+main
+  display: flex
+  background: #83B0B9
+  background: #E4B162
+  background: #D35657
+  background: #343943
+  background-color: #98262e
+  color: white
+  flex-grow: 1
+  padding: 1rem
+
+aside
+  display: flex
+  background: #e6e6e6
+  width: 100px
+  max-width: 200px
+  color: black
+  flex-grow: 0
+  display: none
+
+footer
+  display: flex
+  background: #1C1D21
+  color: #ededed
+  font-size: 0.7rem
+  justify-content: flex-end
+  height: auto
+  padding: 5px 10px 5px 10px
+
+li a span
+  transition: all 0.45s ease
+  transform: translateY(-100%)
+  margin: 0
+  opacity: 0
+
+li:hover a span
+  transform: translateY(-3%)
+  opacity: 1
+  overflow: hidden
+  
+
+
+
+
+  

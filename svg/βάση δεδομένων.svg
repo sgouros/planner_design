@@ -1,0 +1,7 @@
+<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#4691f6" stroke-width="2" stroke-miterlimit="10" d="M6,8v32c0,3.3,8.1,6,18,6s18-2.7,18-6
+	V8" stroke-linejoin="round" stroke-linecap="round"></path>
+<ellipse data-color="color-2" fill="none" stroke="#4691f6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" cx="24" cy="8" rx="18" ry="6" stroke-linejoin="round"></ellipse>
+<path fill="none" stroke="#4691f6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M42,24c0,3.3-8.1,6-18,6
+	S6,27.3,6,24" stroke-linejoin="round"></path>
+</g></svg>

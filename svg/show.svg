@@ -1,0 +1,11 @@
+<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+<g transform="translate(0, 0)">
+<line data-color="color-2" fill="none" stroke="#4691f6" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="24" x2="16" y2="30" stroke-linejoin="miter"></line>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#4691f6" stroke-width="2" stroke-miterlimit="10" x1="13" y1="24" x2="7" y2="31" stroke-linejoin="miter" stroke-linecap="butt"></line>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#4691f6" stroke-width="2" stroke-miterlimit="10" x1="19" y1="24" x2="25" y2="31" stroke-linejoin="miter" stroke-linecap="butt"></line>
+<polyline fill="none" stroke="#4691f6" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="28,20 28,4 4,4 
+	4,20 " stroke-linejoin="miter"></polyline>
+<line data-color="color-2" fill="none" stroke="#4691f6" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="31" y1="24" x2="1" y2="24" stroke-linejoin="miter"></line>
+<line fill="none" stroke="#4691f6" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="4" x2="16" y2="1" stroke-linejoin="miter"></line>
+</g>
+</svg>

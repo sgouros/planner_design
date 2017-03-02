@@ -1,0 +1,58 @@
+
+
+svg
+  fill: none
+  stroke: $nav-item-svg-color
+  stroke-width: $nav-item-stroke-width
+  stroke-linecap: round
+  stroke-miterlimit: 10
+  stroke-linejoin: round
+  li.selected & // αν είναι child του li.selected
+    stroke: $nav-item-svg-color-selected
+     
+
+.svg-left-nav-icon
+  display: flex
+  width: 32px
+  height: 32px
+  padding-bottom: 6px
+  padding-top: 0px
+  &#edit-icon
+    width: 36px
+    height: 36px
+ 
+.animated
+  stroke-dasharray: 110
+  animation-name:  do-animation
+  animation-iteration-count: 1
+  animation-duration: 2s
+  animation-timing-function: linear
+  animation-delay: 0s
+  animation-direction: forwards
+  &.fast
+    animation-duration: 1s
+  &.slow
+    animation-duration: 6s
+  li.selected & // αν είναι child του li.selected
+    animation-name:  none
+
+@keyframes do-animation
+  from
+    stroke-dashoffset: 110
+    fill: none
+  to
+    stroke-dashoffset: 0
+
+li a svg
+  transition: all 0.45s ease
+  transform: translateY(25%)
+  margin: 0
+  opacity: 1
+
+
+li:hover a svg
+  transform: translateY(0%)
+  opacity: 1
+  overflow: hidden
+  
+
