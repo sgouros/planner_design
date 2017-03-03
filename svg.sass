@@ -1,7 +1,8 @@
-
+@import variables.sass
 
 svg
   fill: none
+
   stroke: $nav-item-svg-color
   stroke-width: $nav-item-stroke-width
   stroke-linecap: round
@@ -10,6 +11,17 @@ svg
   li.selected & // αν είναι child του li.selected
     stroke: $nav-item-svg-color-selected
      
+
+
+.svg-top-nav-icon
+  display: flex
+  width: 20px
+  padding: 0
+  margin: 0
+  stroke-width: 2
+  
+  stroke: $nav-item-svg-color
+  
 
 .svg-left-nav-icon
   display: flex
@@ -43,14 +55,14 @@ svg
   to
     stroke-dashoffset: 0
 
-li a svg
+li a .svg-left-nav-icon
   transition: all 0.45s ease
   transform: translateY(25%)
   margin: 0
   opacity: 1
 
 
-li:hover a svg
+li:hover a .svg-left-nav-icon
   transform: translateY(0%)
   opacity: 1
   overflow: hidden

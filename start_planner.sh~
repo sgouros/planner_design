@@ -1,3 +1,5 @@
-cd /home/george/Dropbox/my_code/planner
-sass --watch styles.sass:styles.css
+cd /home/george/code/planner_design/
+git pull origin
 code
+sass --watch .:.
+
