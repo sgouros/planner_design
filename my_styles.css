@@ -1,104 +1,133 @@
-/*
-Error: Undefined variable: "$nav-link-color-hover".
-        on line 41 of my_styles.sass
+body {
+  display: flex;
+  background: #d6d6d6;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0; }
 
-36:         display: flex
-37:         flex-direction: row
-38:         align-items: center
-39:         justify-content: center
-40:         text-decoration: none
-41:         color: $nav-link-color-hover
-42:         width: 100%
-43:         height: 100%
-44: 
-45: .left-nav
-46:   display: flex
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 30px;
+  color: white;
+  background: black; }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0; }
+    header ul li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding-right: 10px;
+      height: 100%;
+      width: auto; }
+      header ul li a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #aeaeae;
+        width: 100%;
+        height: 100%; }
 
-Backtrace:
-my_styles.sass:41
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/home/george/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$nav-link-color-hover\".\A         on line 41 of my_styles.sass\A \A 36:         display: flex\A 37:         flex-direction: row\A 38:         align-items: center\A 39:         justify-content: center\A 40:         text-decoration: none\A 41:         color: $nav-link-color-hover\A 42:         width: 100%\A 43:         height: 100%\A 44: \A 45: .left-nav\A 46:   display: flex"; }
+.left-nav {
+  display: flex;
+  background: #131519;
+  color: #aeaeae;
+  flex-grow: 1;
+  max-width: 110px;
+  min-width: 70px;
+  font-size: 0.76rem; }
+  .left-nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0; }
+    .left-nav ul li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      height: 87px;
+      width: 100%; }
+      .left-nav ul li.selected {
+        color: #000000;
+        background-color: #98262e; }
+      .left-nav ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #aeaeae;
+        width: 100%;
+        height: 100%; }
+
+.main-aside-footer-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #98262e; }
+
+.main-aside-section {
+  display: flex;
+  flex-grow: 1; }
+
+main {
+  display: flex;
+  background: #83B0B9;
+  background: #E4B162;
+  background: #D35657;
+  background: #343943;
+  background-color: #98262e;
+  color: white;
+  flex-grow: 1;
+  padding: 1rem; }
+
+aside {
+  display: flex;
+  background: #e6e6e6;
+  width: 100px;
+  max-width: 200px;
+  color: black;
+  flex-grow: 0;
+  display: none; }
+
+footer {
+  display: flex;
+  background: #FFFFFF;
+  font-size: 0.7rem;
+  justify-content: flex-start;
+  height: auto;
+  padding: 5px 10px 5px 10px;
+  opacity: 0.3; }
+  footer span {
+    opacity: 0.5;
+    color: white; }
+
+li a span {
+  transition: all 0.45s ease;
+  transform: translateY(-100%);
+  margin: 0;
+  opacity: 0; }
+
+li:hover a span {
+  transform: translateY(-3%);
+  opacity: 1;
+  overflow: hidden; }
+
+/*# sourceMappingURL=my_styles.css.map */
