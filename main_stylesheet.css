@@ -11,8 +11,8 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  width: 20%;
-  height: 30px;
+  width: 80%;
+  height: 60px;
   color: white;
   background: black; }
   header ul {
@@ -47,7 +47,7 @@ header {
   background: #131519;
   color: #aeaeae;
   flex-grow: 1;
-  max-width: 110px;
+  max-width: 95px;
   min-width: 70px;
   font-size: 0.76rem; }
   .left-nav ul {
@@ -58,25 +58,35 @@ header {
     padding: 0; }
     .left-nav ul li {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
       margin: 0;
       padding: 0;
-      height: 87px;
-      width: 100%; }
+      height: 95px;
+      width: 100%;
+      border: 1px dashed red; }
       .left-nav ul li.selected {
         color: #000000;
-        background-color: #98262e; }
+        background-color: #FFFFFF; }
       .left-nav ul li a {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-decoration: none;
+        border: 1px dashed green;
         color: #aeaeae;
         width: 100%;
         height: 100%; }
+      .left-nav ul li ::before {
+        content: "";
+        top: 0;
+        right: 0px;
+        height: 30px;
+        width: 4px;
+        background-color: #83b0b9;
+        opacity: 1; }
 
 .main-aside-footer-section {
   display: flex;
@@ -92,9 +102,9 @@ main {
   display: flex;
   background: #83B0B9;
   background: #E4B162;
-  background: #D35657;
   background: #343943;
   background-color: #98262e;
+  background-color: #D35657;
   color: white;
   flex-grow: 1;
   padding: 1rem; }
@@ -139,7 +149,7 @@ svg {
   stroke-miterlimit: 10;
   stroke-linejoin: round; }
   li.selected svg {
-    stroke: #fe6e6e; }
+    stroke: #D35657; }
 
 .svg-top-nav-icon {
   display: flex;

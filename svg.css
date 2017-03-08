@@ -6,7 +6,7 @@ svg {
   stroke-miterlimit: 10;
   stroke-linejoin: round; }
   li.selected svg {
-    stroke: #fe6e6e; }
+    stroke: #D35657; }
 
 .svg-top-nav-icon {
   display: flex;
