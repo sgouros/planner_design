@@ -49,9 +49,10 @@ header
   background: $nav-item-background-color 
   color: $nav-item-text-color
   flex-grow: 1
-  max-width: 95px
+  max-width: 100px
   min-width: 70px
   font-size: 0.76rem
+  
   ul
     display: flex
     flex-direction: column
@@ -60,14 +61,15 @@ header
     padding: 0
     li
       display: flex
-      flex-direction: row
-      align-items: center
+      flex-direction: column
       justify-content: center
+      align-items: center
       margin: 0
       padding: 0
       height: 95px
-      width: 100%
-      border: 1px dashed red
+      width: calc(100%-10px) 
+      
+      
       &.selected
         color: $nav-item-text-color-selected
         background-color: $nav-item-background-color-selected
@@ -77,25 +79,12 @@ header
         align-items: center
         justify-content: center
         text-decoration: none
-        border: 1px dashed green
         color: $nav-link-color-hover
-        width: 100%
+        flex-grow: 1
+        width:calc(100%) 
         height: 100%
+        
 
-      ::before 
-        // border: 1px dashed yellow
-        // position: absolute
-        // display: flex
-        // float: left
-        content: ''
-        top: 0
-        right: 0px
-        height: 30px
-        width: 4px
-        background-color: #83b0b9
-        opacity: 1
-        // transition: opacity 0.2s
-        // pointer-events: none
 
 
 .main-aside-footer-section

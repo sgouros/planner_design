@@ -46,7 +46,7 @@ header {
   background: #131519;
   color: #aeaeae;
   flex-grow: 1;
-  max-width: 95px;
+  max-width: 100px;
   min-width: 70px;
   font-size: 0.76rem; }
   .left-nav ul {
@@ -57,14 +57,13 @@ header {
     padding: 0; }
     .left-nav ul li {
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       margin: 0;
       padding: 0;
       height: 95px;
-      width: 100%;
-      border: 1px dashed red; }
+      width: calc(100%-10px); }
       .left-nav ul li.selected {
         color: #000000;
         background-color: #FFFFFF; }
@@ -74,18 +73,9 @@ header {
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        border: 1px dashed green;
         color: #aeaeae;
-        width: 100%;
+        flex-grow: 1;
         height: 100%; }
-      .left-nav ul li ::before {
-        content: "";
-        top: 0;
-        right: 0px;
-        height: 30px;
-        width: 4px;
-        background-color: #83b0b9;
-        opacity: 1; }
 
 .main-aside-footer-section {
   display: flex;
