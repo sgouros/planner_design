@@ -1,7 +1,7 @@
 cd /home/george/code/planner_design/
-nautilus .
+nautilus &
 git pull origin
 code
-gnome-terminal -e 'bash python -m SimpleHTTPServer 8080'
+gnome-terminal -x bash -c 'python -m SimpleHTTPServer 8080' &
 sass --watch .:.
 
